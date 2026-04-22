@@ -156,35 +156,45 @@ h1 {
 
 .blog-content {
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding: 0;
 }
 
-.content,
-.blog-content {
-  width: min(90.8vw, 1165px);
-  min-height: 388px;
-}
-
-.blog-panel {
+.blog-feed {
   width: min(100%, 790px);
-  min-height: 291px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.blog-post {
+  width: 100%;
   background: var(--navy);
   border: 3px solid var(--light-line);
   box-shadow: 0 0 0 1px rgba(5, 17, 49, 0.75);
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  text-align: center;
+  padding: 18px;
 }
 
-.blog-panel h2 {
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.post-avatar {
+  width: 56px;
+  height: 56px;
+  border: 2px solid var(--light-line);
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+}
+
+.post-header h2 {
   margin: 0;
-  font-size: clamp(42px, 5vw, 66px);
+  font-size: clamp(24px, 2.5vw, 34px);
   line-height: 1;
   font-weight: 900;
   letter-spacing: 0;
@@ -193,11 +203,72 @@ h1 {
     0 0 2px rgba(255, 255, 255, 0.45);
 }
 
-.blog-panel p {
-  margin: 20px 0 0;
-  font-size: clamp(20px, 2vw, 28px);
-  line-height: 1.25;
+.post-header time {
+  display: block;
+  margin-top: 7px;
+  color: var(--light-line);
+  font-size: 14px;
   font-weight: 900;
+}
+
+.post-text {
+  margin: 16px 0 0;
+  font-size: clamp(18px, 1.7vw, 24px);
+  line-height: 1.3;
+  font-weight: 900;
+  white-space: pre-wrap;
+}
+
+.post-photos {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.post-photos img {
+  width: 100%;
+  max-height: 360px;
+  border: 2px solid #1b5a3f;
+  display: block;
+  object-fit: cover;
+}
+
+.post-actions {
+  margin-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.post-actions button {
+  border: 2px solid var(--light-line);
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 8px 14px;
+  cursor: default;
+}
+
+.empty-post {
+  min-height: 291px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 900;
+}
+
+.content,
+.blog-content {
+  width: min(90.8vw, 1165px);
+  min-height: 388px;
 }
 
 .footer {
