@@ -55,7 +55,7 @@ body {
 }
 
 .nav-link {
-  color: #fff;
+  color: var(--light-line);
   font-size: clamp(20px, 2.25vw, 34px);
   line-height: 1;
   font-weight: 900;
@@ -74,7 +74,7 @@ body {
 }
 
 .nav-link.active {
-  color: var(--light-line);
+  color: #fff;
 }
 
 h1 {
