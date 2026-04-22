@@ -7,10 +7,10 @@ Newest posts should go at the top of the list.
 ```js
 {
   name: "Kobe",
-  profilePicture: "favicon.webp",
+  profilePicture: "images/favicon.webp",
   date: "2026-04-22T12:00:00-05:00",
   text: "Write the post text here.",
-  photos: ["photo-one.png", "photo-two.jpg"],
+  photos: ["images/photo-one.png", "images/photo-two.jpg"],
   likes: 0,
   comments: 0,
   shares: 0
@@ -19,7 +19,7 @@ Newest posts should go at the top of the list.
 
 Rules:
 
-- Put uploaded image files in the same folder as `index.html`.
+- Put uploaded image files in the `images/` folder.
 - Add their filenames to `photos`.
 - Use an empty photo list if there are no photos: `photos: []`.
 - The fake buttons use the numbers from `likes`, `comments`, and `shares`.
