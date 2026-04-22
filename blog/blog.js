@@ -29,7 +29,7 @@
     return `
       <article class="blog-post">
         <header class="post-header">
-          <img class="post-avatar" src="${escapeAttr(post.profilePicture || "images/favicon.webp")}" alt="">
+          <img class="post-avatar" src="${escapeAttr(post.profilePicture || "/images/favicon.webp")}" alt="">
           <div>
             <h2>${escapeHtml(post.name || "Kobe")}</h2>
             <time datetime="${escapeAttr(post.date || "")}">${escapeHtml(date)}</time>

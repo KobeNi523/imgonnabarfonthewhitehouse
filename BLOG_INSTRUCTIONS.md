@@ -7,10 +7,10 @@ Newest posts should go at the top of the list.
 ```js
 {
   name: "Kobe",
-  profilePicture: "images/favicon.webp",
+  profilePicture: "/images/favicon.webp",
   date: "2026-04-22T12:00:00-05:00",
   text: "Write the post text here.",
-  photos: ["images/photo-one.png", "images/photo-two.jpg"],
+  photos: ["/images/photo-one.png", "/images/photo-two.jpg"],
   likes: 0,
   comments: 0,
   shares: 0
