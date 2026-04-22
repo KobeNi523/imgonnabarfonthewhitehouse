@@ -1,6 +1,6 @@
 # Adding Blog Posts
 
-Edit `posts.js`. Each post is one object inside `window.BLOG_POSTS`.
+Edit `blog/posts.js`. Each post is one object inside `window.BLOG_POSTS`.
 
 Newest posts should go at the top of the list.
 
@@ -23,4 +23,4 @@ Rules:
 - Add their filenames to `photos`.
 - Use an empty photo list if there are no photos: `photos: []`.
 - The fake buttons use the numbers from `likes`, `comments`, and `shares`.
-- Visitors cannot add posts from the website. Only someone with GitHub repo access can edit `posts.js`.
+- Visitors cannot add posts from the website. Only someone with GitHub repo access can edit `blog/posts.js`.
