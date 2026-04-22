@@ -1,8 +1,14 @@
 (function () {
   const feed = document.getElementById("blog-feed");
+  const postsLoaded = "BLOG_POSTS" in window;
   const posts = Array.isArray(window.BLOG_POSTS) ? window.BLOG_POSTS : [];
 
   if (!feed) {
+    return;
+  }
+
+  if (!postsLoaded) {
+    feed.innerHTML = '<article class="blog-post empty-post">Blog posts could not load. Check posts.js.</article>';
     return;
   }
 

@@ -8,7 +8,7 @@ window.BLOG_POSTS = [
     likes: 0,
     comments: 0,
     shares: 0
-  }
+  },
   {
     name: "Kobe Ni",
     profilePicture: "pfp.jpg",
