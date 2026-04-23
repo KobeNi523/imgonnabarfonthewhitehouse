@@ -11,6 +11,8 @@ Newest posts should go at the top of the list.
   date: "2026-04-22T12:00:00-05:00",
   text: "Write the post text here.",
   photos: ["/images/photo-one.png", "/images/photo-two.jpg"],
+  videos: ["/videos/video-one.mp4"],
+  youtube: ["https://www.youtube.com/watch?v=VIDEO_ID"],
   likes: 0,
   comments: 0,
   shares: 0
@@ -22,5 +24,7 @@ Rules:
 - Put uploaded image files in the `images/` folder.
 - Add their filenames to `photos`.
 - Use an empty photo list if there are no photos: `photos: []`.
+- Uploaded videos can go in a `videos/` folder and be listed in `videos`.
+- YouTube links can be normal watch links or embed links listed in `youtube`.
 - The fake buttons use the numbers from `likes`, `comments`, and `shares`.
 - Visitors cannot add posts from the website. Only someone with GitHub repo access can edit `blog/posts.js`.

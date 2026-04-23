@@ -25,6 +25,8 @@
   feed.innerHTML = posts.map((post) => {
     const date = post.date ? formatter.format(new Date(post.date)) : "";
     const photos = Array.isArray(post.photos) ? post.photos : [];
+    const youtube = Array.isArray(post.youtube) ? post.youtube : [];
+    const videos = Array.isArray(post.videos) ? post.videos : [];
 
     return `
       <article class="blog-post">
@@ -37,6 +39,8 @@
         </header>
         <p class="post-text">${escapeHtml(post.text || "")}</p>
         ${renderPhotos(photos)}
+        ${renderVideos(videos)}
+        ${renderYoutube(youtube)}
         <div class="post-actions" aria-label="Post actions">
           <div class="post-action-links">
             <button type="button">Like</button>
@@ -64,6 +68,65 @@
         ${photos.map((photo) => `<img src="${escapeAttr(photo)}" alt="">`).join("")}
       </div>
     `;
+  }
+
+  function renderVideos(videos) {
+    if (videos.length === 0) {
+      return "";
+    }
+
+    return `
+      <div class="post-media">
+        ${videos.map((video) => `<video src="${escapeAttr(video)}" controls playsinline></video>`).join("")}
+      </div>
+    `;
+  }
+
+  function renderYoutube(youtube) {
+    if (youtube.length === 0) {
+      return "";
+    }
+
+    return `
+      <div class="post-youtube">
+        ${youtube.map((url) => `
+          <iframe
+            src="${escapeAttr(toYoutubeEmbedUrl(url))}"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  function toYoutubeEmbedUrl(url) {
+    const raw = String(url);
+
+    if (raw.includes("youtube.com/embed/")) {
+      return raw;
+    }
+
+    try {
+      const parsed = new URL(raw);
+
+      if (parsed.hostname.includes("youtu.be")) {
+        const id = parsed.pathname.replace("/", "");
+        return `https://www.youtube.com/embed/${id}`;
+      }
+
+      if (parsed.hostname.includes("youtube.com")) {
+        const id = parsed.searchParams.get("v");
+        if (id) {
+          return `https://www.youtube.com/embed/${id}`;
+        }
+      }
+    } catch (error) {
+      return raw;
+    }
+
+    return raw;
   }
 
   function escapeHtml(value) {
