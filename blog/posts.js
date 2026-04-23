@@ -18,5 +18,15 @@ window.BLOG_POSTS = [
     likes: 0,
     comments: 0,
     shares: 0
+  },
+  {
+    name: "Kobe Ni",
+    profilePicture: "/images/pfp.jpg",
+    date: "2026-04-21T20:49:00-05:00",
+    text: "Yup, it's been this kind of day.",
+    youtube: ["https://www.youtube.com/embed/EbD7lfrsY2s?si=BOM7ELZm40NAx1Y5"],
+    likes: 0,
+    comments: 0,
+    shares: 0
   }
 ];
