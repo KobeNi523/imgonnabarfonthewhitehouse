@@ -38,9 +38,17 @@
         <p class="post-text">${escapeHtml(post.text || "")}</p>
         ${renderPhotos(photos)}
         <div class="post-actions" aria-label="Post actions">
-          <button type="button">Like ${Number(post.likes || 0)}</button>
-          <button type="button">Comment ${Number(post.comments || 0)}</button>
-          <button type="button">Share ${Number(post.shares || 0)}</button>
+          <div class="post-action-links">
+            <button type="button">Like</button>
+            <span aria-hidden="true">·</span>
+            <button type="button">Comment</button>
+            <span aria-hidden="true">·</span>
+            <button type="button">Share</button>
+          </div>
+          <div class="post-like-summary">
+            <span class="like-icon" aria-hidden="true">👍</span>
+            <span><strong>${Number(post.likes || 0)}</strong> people like this</span>
+          </div>
         </div>
       </article>
     `;
