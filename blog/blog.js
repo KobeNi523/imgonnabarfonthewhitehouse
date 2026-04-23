@@ -47,7 +47,7 @@
           </div>
           <div class="post-like-summary">
             <span class="like-icon" aria-hidden="true">👍</span>
-            <span><strong>${Number(post.likes || 0)}</strong> people like this</span>
+            <span><strong>${Number(post.likes || 0)}</strong> <span class="like-summary-muted">people</span> <span class="like-summary-text">like this</span></span>
           </div>
         </div>
       </article>

@@ -273,7 +273,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 900;
 }
 
@@ -281,9 +281,17 @@ h1 {
   color: var(--light-line);
 }
 
+.like-summary-muted {
+  color: var(--light-line);
+}
+
+.like-summary-text {
+  color: #fff;
+}
+
 .like-icon {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1;
 }
 
