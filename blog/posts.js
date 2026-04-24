@@ -3,7 +3,7 @@ window.BLOG_POSTS = [
     name: "Kobe Ni",
     profilePicture: "/images/pfp.jpg",
     date: "2026-04-22T19:17:00-05:00",
-    text: "It's gotta be 5:00 somewhere, right? 😉",
+    text: "It's got to be 5:00 somewhere, right? 😉",
     photos: ["/images/wine.webp"],
     likes: 0,
     comments: 0,
