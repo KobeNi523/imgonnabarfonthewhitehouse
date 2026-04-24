@@ -2,6 +2,15 @@ window.BLOG_POSTS = [
   {
     name: "Kobe Ni",
     profilePicture: "/images/pfp.jpg",
+    date: "2026-04-23T19:54:00-05:00",
+    text: "9/11 was bad.",
+    likes: 1,
+    comments: 0,
+    shares: 0
+  },
+  {
+    name: "Kobe Ni",
+    profilePicture: "/images/pfp.jpg",
     date: "2026-04-22T19:17:00-05:00",
     text: "It's got to be 5:00 somewhere, right? 😉",
     photos: ["/images/wine.webp"],
