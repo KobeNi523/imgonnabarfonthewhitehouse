@@ -283,6 +283,10 @@ h1 {
   text-underline-offset: 4px;
 }
 
+.post-action-links button.is-active {
+  color: var(--light-line);
+}
+
 .post-like-summary {
   margin-top: 9px;
   color: var(--light-line);

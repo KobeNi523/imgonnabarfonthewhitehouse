@@ -1,5 +1,6 @@
 window.BLOG_POSTS = [
   {
+    id: "post-2026-04-23-911",
     name: "Kobe Ni",
     profilePicture: "/images/pfp.jpg",
     date: "2026-04-23T19:54:00-05:00",
@@ -9,6 +10,7 @@ window.BLOG_POSTS = [
     shares: 0
   },
   {
+    id: "post-2026-04-22-wine",
     name: "Kobe Ni",
     profilePicture: "/images/pfp.jpg",
     date: "2026-04-22T19:17:00-05:00",
@@ -19,6 +21,7 @@ window.BLOG_POSTS = [
     shares: 0
   },
   {
+    id: "post-2026-04-22-cupcake",
     name: "Kobe Ni",
     profilePicture: "/images/pfp.jpg",
     date: "2026-04-22T13:46:00-05:00",
@@ -29,6 +32,7 @@ window.BLOG_POSTS = [
     shares: 0
   },
   {
+    id: "post-2026-04-21-youtube",
     name: "Kobe Ni",
     profilePicture: "/images/pfp.jpg",
     date: "2026-04-21T20:49:00-05:00",

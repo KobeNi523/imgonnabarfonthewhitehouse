@@ -6,6 +6,7 @@ Newest posts should go at the top of the list.
 
 ```js
 {
+  id: "post-2026-04-22-example",
   name: "Kobe",
   profilePicture: "/images/favicon.webp",
   date: "2026-04-22T12:00:00-05:00",
@@ -26,5 +27,6 @@ Rules:
 - Use an empty photo list if there are no photos: `photos: []`.
 - Uploaded videos can go in a `videos/` folder and be listed in `videos`.
 - YouTube links can be normal watch links or embed links listed in `youtube`.
+- Keep `id` stable after publishing. Firebase likes use that ID.
 - The fake buttons use the numbers from `likes`, `comments`, and `shares`.
 - Visitors cannot add posts from the website. Only someone with GitHub repo access can edit `blog/posts.js`.
