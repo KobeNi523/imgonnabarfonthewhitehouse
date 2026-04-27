@@ -1,15 +1,5 @@
 window.BLOG_POSTS = [
   {
-    id: "post-2026-04-23-910",
-    name: "Kobe Ni",
-    profilePicture: "/images/pfp.jpg",
-    date: "2026-04-23T19:54:00-05:00",
-    text: "9/11 was bad.",
-    likes: 0,
-    comments: 0,
-    shares: 0
-  },
-  {
     id: "post-2026-04-23-911",
     name: "Kobe Ni",
     profilePicture: "/images/pfp.jpg",
