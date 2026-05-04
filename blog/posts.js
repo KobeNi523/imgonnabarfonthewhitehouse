@@ -1,5 +1,16 @@
 window.BLOG_POSTS = [
   {
+    id: "post-2026-05-04-coffee",
+    name: "Kobe Ni",
+    profilePicture: "/images/pfp.jpg",
+    date: "2026-05-04T15:21:00-05:00",
+    text: "#WednesdayWisdom",
+    photos: ["/images/coffee.png"],
+    likes: 0,
+    comments: 0,
+    shares: 0
+  },
+  {
     id: "post-2026-04-23-911",
     name: "Kobe Ni",
     profilePicture: "/images/pfp.jpg",
