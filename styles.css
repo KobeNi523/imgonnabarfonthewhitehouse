@@ -177,7 +177,7 @@ h1 {
   background: var(--navy);
   border: 3px solid var(--light-line);
   box-shadow: 0 0 0 1px rgba(5, 17, 49, 0.75);
-  color: var(--light-line);
+  color: #fff;
   padding: 20px 22px;
 }
 
@@ -248,7 +248,7 @@ h1 {
   background: var(--navy);
   border: 3px solid var(--light-line);
   box-shadow: 0 0 0 1px rgba(5, 17, 49, 0.75);
-  color: var(--light-line);
+  color: #fff;
   padding: 18px;
 }
 
